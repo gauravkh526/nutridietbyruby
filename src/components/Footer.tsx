@@ -2,6 +2,7 @@
 
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Image from 'next/image';
 
 const Footer = () => {
   const router = useRouter();
@@ -16,7 +17,13 @@ const Footer = () => {
         
         {/* Left Section: Branding & Navigation */}
         <div>
-          <h3 className="text-2xl font-bold text-gray-900">Nutridietbyruby.com</h3>
+          <Image 
+   src="/logo/nutridietbyruby_logo.png"
+    alt="Nutridietbyruby Logo" 
+    width={100} 
+    height={100}
+    priority
+  />
           <p className="mt-2 text-sm text-gray-600">
             Helping people across India achieve better health with science-backed nutrition and personalized diet plans.
           </p>
