@@ -13,7 +13,7 @@ function calcSavePercent(monthlyBase: number, planTotal: number, months: number)
 }
 
 export default function PersonalizedPlans() {
-  const monthlyBase = 999;
+  const monthlyBase = 2999;
   const waNumber = '918010766712';
   const waMessage = encodeURIComponent("Hello - I'm interested in this plan. Please help me get started.");
 
@@ -21,7 +21,7 @@ export default function PersonalizedPlans() {
     {
       key: 'monthly',
       title: 'Monthly Plan',
-      priceLabel: '₹999 / month',
+      priceLabel: '₹2999 / month',
       monthlyEquivalent: monthlyBase,
       features: [
         '1 x 30-min coaching session / month',
@@ -34,10 +34,10 @@ export default function PersonalizedPlans() {
     {
       key: 'quarterly',
       title: 'Quarterly Plan',
-      totalPrice: 2399,
+      totalPrice: 5999,
       months: 3,
-      priceLabel: '₹2,399 / 3 months',
-      monthlyEquivalent: Math.round(2399 / 3),
+      priceLabel: '₹5,999 / 3 months',
+      monthlyEquivalent: Math.round(5999 / 3),
       features: [
         '3 x 30-min coaching sessions (1/month)',
         'Personalized meal & snack guides',
@@ -50,10 +50,10 @@ export default function PersonalizedPlans() {
     {
       key: 'halfyearly',
       title: 'Half-Yearly Plan',
-      totalPrice: 4499,
+      totalPrice: 9999,
       months: 6,
-      priceLabel: '₹4,499 / 6 months',
-      monthlyEquivalent: Math.round(4499 / 6),
+      priceLabel: '₹9,999 / 6 months',
+      monthlyEquivalent: Math.round(9999 / 6),
       features: [
         '6 x 30-min coaching sessions (1/month)',
         'Detailed meal plans + 12 exclusive recipes',
@@ -67,10 +67,10 @@ export default function PersonalizedPlans() {
     {
       key: 'yearly',
       title: 'Yearly Plan',
-      totalPrice: 7999,
+      totalPrice: 14999,
       months: 12,
-      priceLabel: '₹7,999 / year',
-      monthlyEquivalent: Math.round(7999 / 12),
+      priceLabel: '₹14,999 / year',
+      monthlyEquivalent: Math.round(14999 / 12),
       features: [
         '12 x 30-min coaching sessions (1/month)',
         'Comprehensive nutrition roadmap + 30 recipes',
