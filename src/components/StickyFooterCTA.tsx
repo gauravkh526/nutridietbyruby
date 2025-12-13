@@ -27,7 +27,7 @@ const StickyFooterCTA = () => {
             </a>
 
             <a
-              href="https://wa.me/918077493907?text=Hi%2C%20I%20want%20to%20start%20my%20legal%20awareness%20training."
+              href="https://wa.me/918010766712?text=Hi%2C%20I%20want%20to%20start%20my%20legal%20awareness%20training."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full text-sm font-medium transition"

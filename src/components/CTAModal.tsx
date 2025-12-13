@@ -36,7 +36,7 @@ const CTAModal = () => {
     "Hi, I want a free consultation regarding my diet and ongoing health concerns. Please assist."
   )
 
-  const whatsappLink = `https://wa.me/918010766612?text=${whatsappMessage}`
+  const whatsappLink = `https://wa.me/918010766712?text=${whatsappMessage}`
 
   return (
     <AnimatePresence>
