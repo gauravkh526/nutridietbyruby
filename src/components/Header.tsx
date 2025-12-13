@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -41,9 +42,16 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold text-green-600">
-            Nutridietbyruby.com
-          </Link>
+          <Link href="/" className="flex items-center gap-2">
+  <Image 
+  src="/logo/nutridietbyruby_logo.jpg"
+  alt="Nutridietbyruby" 
+  width={100} 
+  height={100}
+  unoptimized={true}
+  priority
+/>
+  </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-6 items-center text-gray-700 font-medium">

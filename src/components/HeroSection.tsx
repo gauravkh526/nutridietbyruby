@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
           Your Personal{" "}
-          <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-green-600 via-green-500 to-cyan-500 bg-clip-text text-transparent">
             Nutrition Expert
           </span>
           {" "}Awaits

@@ -130,11 +130,15 @@ export default function PersonalizedPlans() {
 
               <CardContent className="p-6 flex flex-col justify-between h-full">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">{p.title}</h3>
-                  {p.highlight && (
-                    <p className="text-sm text-emerald-600 font-medium mb-2">{p.highlight}</p>
-                  )}
-                  <p className="text-2xl font-bold text-green-700 mb-2">{p.priceLabel}</p>
+                  {/* Green Background Box for Plan Details */}
+                  <div className="bg-[#13ad9d]/10 border-l-4 border-[#13ad9d] pl-3 py-3 mb-4 text-left">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-1">{p.title}</h3>
+                    {p.highlight && (
+                      <p className="text-sm text-[#13ad9d] font-medium mb-2">{p.highlight}</p>
+                    )}
+                    <p className="text-2xl font-bold text-[#13ad9d]">{p.priceLabel}</p>
+                  </div>
+
                   <p className="text-sm text-gray-500 mb-4">Approx. <span className="font-medium text-gray-700">₹{p.monthlyEquivalent}/mo</span></p>
 
                   <ul className="text-gray-600 text-sm list-disc pl-5 space-y-2 mb-6 text-left">
@@ -165,7 +169,6 @@ export default function PersonalizedPlans() {
         <div className="mt-8 text-sm text-gray-500">
           <p>All prices include taxes. Sessions must be scheduled in advance. For corporate/group plans or custom bundles, contact <a href="mailto:support@nutridietbyruby.com" className="underline text-green-600">support@nutridietbyruby.com</a>.</p>
         </div>
-
       </div>
     </section>
   );

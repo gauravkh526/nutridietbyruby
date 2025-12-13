@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function CTASection() {
   return (
-    <section className="w-full bg-gradient-to-r from-blue-700 to-indigo-700 text-white py-24 px-6">
+    <section className="w-full bg-gradient-to-r from-[#13ad9d] to-[#0f9585] text-white py-24 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -31,7 +31,7 @@ export default function CTASection() {
           href="https://forms.gle/RxX91vQedEikqXNy7"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-blue-700 text-lg font-semibold px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:bg-gray-100 transition duration-300 ease-in-out"
+          className="inline-block bg-white text-green-700 text-lg font-semibold px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl hover:bg-gray-100 transition duration-300 ease-in-out"
         >
           Join Nutrition Awareness
         </a>
