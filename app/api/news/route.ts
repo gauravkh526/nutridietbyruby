@@ -25,16 +25,19 @@ export async function GET() {
       keywords.map((keyword) =>
         axios.get(
           `https://newsapi.org/v2/everything?q=${encodeURIComponent(
-            keyword
-          )}&apiKey=${apiKey}&pageSize=10&language=en&sortBy=publishedAt`
-        )
-      )
+            keyword,
+          )}&apiKey=${apiKey}&pageSize=10&language=en&sortBy=publishedAt`,
+        ),
+      ),
     );
 
     const allArticles = responses.flatMap((res) => res.data.articles || []);
     return NextResponse.json({ articles: allArticles });
   } catch (error: any) {
     console.error("🔴 News API failed:", error.message);
-    return NextResponse.json({ error: "Failed to fetch news" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to fetch news" },
+      { status: 500 },
+    );
   }
 }

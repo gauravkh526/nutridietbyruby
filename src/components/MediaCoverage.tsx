@@ -1,28 +1,31 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const newsItems = [
   {
-    title: 'Top 5 Diet Trends for 2025',
-    summary: 'Leading health platforms highlight sustainable and science-backed diet trends for better health and energy.',
-    link: 'https://www.healthline.com/nutrition/healthy-eating-tips',
-    img: '/nutrition1.jpg',
+    title: "Top 5 Diet Trends for 2025",
+    summary:
+      "Leading health platforms highlight sustainable and science-backed diet trends for better health and energy.",
+    link: "https://www.healthline.com/nutrition/healthy-eating-tips",
+    img: "/nutrition1.jpg",
   },
   {
-    title: 'How Personalized Meal Plans Improve Wellness',
-    summary: 'Nutrition experts explain why customized diets work better than generic meal plans for weight and health goals.',
-    link: 'https://www.medicalnewstoday.com/articles/personalized-nutrition',
-    img: '/nutrition2.jpg',
+    title: "How Personalized Meal Plans Improve Wellness",
+    summary:
+      "Nutrition experts explain why customized diets work better than generic meal plans for weight and health goals.",
+    link: "https://www.medicalnewstoday.com/articles/personalized-nutrition",
+    img: "/nutrition2.jpg",
   },
   {
-    title: 'Nutrition Hacks That Actually Work',
-    summary: 'Wellness blogs share real strategies to improve metabolism, digestion, and maintain a balanced diet.',
-    link: 'https://www.eatthis.com/nutrition-tips/',
-    img: '/nutrition3.jpg',
+    title: "Nutrition Hacks That Actually Work",
+    summary:
+      "Wellness blogs share real strategies to improve metabolism, digestion, and maintain a balanced diet.",
+    link: "https://www.eatthis.com/nutrition-tips/",
+    img: "/nutrition3.jpg",
   },
-]
+];
 
 export default function MediaCoverage() {
   return (
@@ -42,7 +45,8 @@ export default function MediaCoverage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto"
         >
-          Top health platforms and blogs sharing insights, trends, and expert tips for better nutrition and wellness.
+          Top health platforms and blogs sharing insights, trends, and expert
+          tips for better nutrition and wellness.
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -59,8 +63,12 @@ export default function MediaCoverage() {
                 />
               </div>
               <div className="p-5 flex flex-col flex-grow">
-                <h3 className="text-lg font-semibold text-green-800">{item.title}</h3>
-                <p className="text-gray-700 text-sm mt-2 flex-grow">{item.summary}</p>
+                <h3 className="text-lg font-semibold text-green-800">
+                  {item.title}
+                </h3>
+                <p className="text-gray-700 text-sm mt-2 flex-grow">
+                  {item.summary}
+                </p>
                 <Link
                   href={item.link}
                   target="_blank"
@@ -75,5 +83,5 @@ export default function MediaCoverage() {
         </div>
       </div>
     </section>
-  )
+  );
 }

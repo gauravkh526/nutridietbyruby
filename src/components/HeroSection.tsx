@@ -12,13 +12,13 @@ export default function HeroSection() {
           Your Personal{" "}
           <span className="bg-gradient-to-r from-green-600 via-green-500 to-cyan-500 bg-clip-text text-transparent">
             Nutrition Expert
-          </span>
-          {" "}Awaits
+          </span>{" "}
+          Awaits
         </h1>
 
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8">
-          Struggling with weight, energy issues, or lifestyle diseases? Don't panic —
-          get expert-backed nutrition guidance tailored for your body.
+          Struggling with weight, energy issues, or lifestyle diseases? Don't
+          panic — get expert-backed nutrition guidance tailored for your body.
           <br className="hidden md:inline" />
           100% science-based knowledge. 0% confusion.
         </p>
@@ -44,7 +44,8 @@ export default function HeroSection() {
         </div>
 
         <div className="mt-10 text-sm text-gray-500 dark:text-gray-400">
-          Trusted by 800+ people across India • Empowering healthier lives with NutriDietByRuby
+          Trusted by 800+ people across India • Empowering healthier lives with
+          NutriDietByRuby
         </div>
       </div>
     </section>

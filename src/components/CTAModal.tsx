@@ -1,41 +1,41 @@
-'use client'
+"use client";
 
-import { useEffect, useState } from 'react'
-import { X, Apple, MessageCircle, Phone } from 'lucide-react'
-import Link from 'next/link'
-import { motion, AnimatePresence } from 'framer-motion'
+import { useEffect, useState } from "react";
+import { X, Apple, MessageCircle, Phone } from "lucide-react";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 const CTAModal = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [popupCount, setPopupCount] = useState(0)
+  const [isOpen, setIsOpen] = useState(false);
+  const [popupCount, setPopupCount] = useState(0);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsOpen(true)
-      setPopupCount(1)
-    }, 10000)
+      setIsOpen(true);
+      setPopupCount(1);
+    }, 10000);
 
-    return () => clearTimeout(timer)
-  }, [])
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleClose = () => {
-    setIsOpen(false)
+    setIsOpen(false);
 
     if (popupCount === 1) {
       const secondTimer = setTimeout(() => {
-        setIsOpen(true)
-        setPopupCount(2)
-      }, 45000)
+        setIsOpen(true);
+        setPopupCount(2);
+      }, 45000);
 
-      return () => clearTimeout(secondTimer)
+      return () => clearTimeout(secondTimer);
     }
-  }
+  };
 
   const whatsappMessage = encodeURIComponent(
-    "Hi Ruby, I want a free consultation regarding my diet and health concerns."
-  )
+    "Hi Ruby, I want a free consultation regarding my diet and health concerns.",
+  );
 
-  const whatsappLink = `https://wa.me/918010766712?text=${whatsappMessage}`
+  const whatsappLink = `https://wa.me/918010766712?text=${whatsappMessage}`;
 
   return (
     <AnimatePresence mode="wait">
@@ -55,7 +55,7 @@ const CTAModal = () => {
           >
             {/* Top gradient */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-green-500" />
-            
+
             {/* Close button */}
             <button
               onClick={handleClose}
@@ -65,27 +65,38 @@ const CTAModal = () => {
             </button>
 
             <div className="p-5 pt-8 text-center">
-              
               {/* Icon + Title */}
               <div className="flex items-center justify-center gap-2 mb-3">
                 <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-500 rounded-xl flex items-center justify-center">
                   <Apple className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h2 className="text-lg font-bold text-gray-900 dark:text-white">Ruby</h2>
-                  <p className="text-xs text-green-600 font-medium">Certified Nutritionist</p>
+                  <h2 className="text-lg font-bold text-gray-900 dark:text-white">
+                    Ruby
+                  </h2>
+                  <p className="text-xs text-green-600 font-medium">
+                    Certified Nutritionist
+                  </p>
                 </div>
               </div>
 
               {/* Trust badges */}
               <div className="flex gap-2 justify-center mb-4 text-xs">
-                <span className="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-lg font-medium">10K+ Helped</span>
-                <span className="px-2 py-1 bg-pink-100 text-pink-700 rounded-lg font-medium">30-Day Results</span>
+                <span className="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-lg font-medium">
+                  10K+ Helped
+                </span>
+                <span className="px-2 py-1 bg-pink-100 text-pink-700 rounded-lg font-medium">
+                  30-Day Results
+                </span>
               </div>
 
               {/* Description */}
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                Get <span className="font-semibold text-green-600">FREE personalized nutrition consultation</span> for weight loss & better health.
+                Get{" "}
+                <span className="font-semibold text-green-600">
+                  FREE personalized nutrition consultation
+                </span>{" "}
+                for weight loss & better health.
               </p>
 
               {/* CTA Button */}
@@ -109,7 +120,7 @@ const CTAModal = () => {
         </motion.div>
       )}
     </AnimatePresence>
-  )
-}
+  );
+};
 
-export default CTAModal
+export default CTAModal;

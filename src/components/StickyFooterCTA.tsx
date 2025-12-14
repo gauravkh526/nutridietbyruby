@@ -11,7 +11,8 @@ const StickyFooterCTA = () => {
           {/* Message */}
           <div className="text-sm sm:text-base font-medium text-gray-800 flex items-center gap-2">
             <span className="text-indigo-600 text-lg">💡</span>
-            Get expert-backed meal plans, diet tips, and wellness guidance — for a healthier you.
+            Get expert-backed meal plans, diet tips, and wellness guidance — for
+            a healthier you.
           </div>
 
           {/* CTAs */}

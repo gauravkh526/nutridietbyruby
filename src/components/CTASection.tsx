@@ -1,7 +1,7 @@
 // components/CTASection.tsx
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function CTASection() {
   return (
@@ -24,7 +24,9 @@ export default function CTASection() {
           transition={{ duration: 0.6 }}
           className="text-lg md:text-xl mb-8 font-medium text-white/90"
         >
-          Take the first step towards better health. We're here to guide you with personalized nutrition support, without stress or confusion — completely free.
+          Take the first step towards better health. We're here to guide you
+          with personalized nutrition support, without stress or confusion —
+          completely free.
         </motion.p>
 
         <a

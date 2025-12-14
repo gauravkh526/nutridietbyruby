@@ -1,6 +1,6 @@
 "use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -40,34 +40,48 @@ export default function Header() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-          
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-  <Image 
-  src="/logo/nutridietbyruby_logo.png"
-  alt="Nutridietbyruby" 
-  width={100} 
-  height={100}
-  unoptimized={true}
-  priority
-/>
-  </Link>
+            <Image
+              src="/logo/nutridietbyruby_logo.png"
+              alt="Nutridietbyruby"
+              width={100}
+              height={100}
+              unoptimized={true}
+              priority
+            />
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-6 items-center text-gray-700 font-medium">
-            <button onClick={() => scrollToSection("about")} className="hover:text-green-600">
+            <button
+              onClick={() => scrollToSection("about")}
+              className="hover:text-green-600"
+            >
               Why Us
             </button>
-            <button onClick={() => scrollToSection("plans")} className="hover:text-green-600">
+            <button
+              onClick={() => scrollToSection("plans")}
+              className="hover:text-green-600"
+            >
               Diet Plans
             </button>
-            <button onClick={() => scrollToSection("testimonials")} className="hover:text-green-600">
+            <button
+              onClick={() => scrollToSection("testimonials")}
+              className="hover:text-green-600"
+            >
               Transformations
             </button>
-            <button onClick={() => scrollToSection("faq")} className="hover:text-green-600">
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="hover:text-green-600"
+            >
               FAQ
             </button>
-            <button onClick={() => scrollToSection("contact")} className="hover:text-green-600">
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="hover:text-green-600"
+            >
               Contact
             </button>
 
@@ -93,19 +107,34 @@ export default function Header() {
         {/* Mobile Nav Panel */}
         {isOpen && (
           <div className="md:hidden bg-white border-t border-gray-200 px-4 pb-4 space-y-4">
-            <button onClick={() => scrollToSection("about")} className="block text-gray-700 hover:text-green-600">
+            <button
+              onClick={() => scrollToSection("about")}
+              className="block text-gray-700 hover:text-green-600"
+            >
               Why Us
             </button>
-            <button onClick={() => scrollToSection("plans")} className="block text-gray-700 hover:text-green-600">
+            <button
+              onClick={() => scrollToSection("plans")}
+              className="block text-gray-700 hover:text-green-600"
+            >
               Diet Plans
             </button>
-            <button onClick={() => scrollToSection("testimonials")} className="block text-gray-700 hover:text-green-600">
+            <button
+              onClick={() => scrollToSection("testimonials")}
+              className="block text-gray-700 hover:text-green-600"
+            >
               Transformations
             </button>
-            <button onClick={() => scrollToSection("faq")} className="block text-gray-700 hover:text-green-600">
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="block text-gray-700 hover:text-green-600"
+            >
               FAQ
             </button>
-            <button onClick={() => scrollToSection("contact")} className="block text-gray-700 hover:text-green-600">
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="block text-gray-700 hover:text-green-600"
+            >
               Contact
             </button>
 

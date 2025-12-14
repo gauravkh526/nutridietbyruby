@@ -1,23 +1,23 @@
-'use client'
+"use client";
 
-import { useEffect, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
-import Header from '@/components/Header';
-import HeroSection from '@/components/HeroSection';
-import FeaturesSection from '@/components/FeaturesSection';
-import HowItWorks from '@/components/HowItWorks';
-import Testimonials from '@/components/Testimonials';
-import CTASection from '@/components/CTASection';
-import RbiGuidelinesSection from '@/components/RbiGuidelinesSection';
-import FaqSection from '@/components/FAQSection';
-import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
+import { useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import FeaturesSection from "@/components/FeaturesSection";
+import HowItWorks from "@/components/HowItWorks";
+import Testimonials from "@/components/Testimonials";
+import CTASection from "@/components/CTASection";
+import RbiGuidelinesSection from "@/components/RbiGuidelinesSection";
+import FaqSection from "@/components/FAQSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 import LegalWins from "@/components/LegalWins";
-import MediaCoverage from '@/components/MediaCoverage';
-import CTAModal from '@/components/CTAModal'
+import MediaCoverage from "@/components/MediaCoverage";
+import CTAModal from "@/components/CTAModal";
 //import WhatsappChatIcon from '@/components/WhatsappChatIcon'
 import StickyFooterCTA from "@/components/StickyFooterCTA";
-import ServicesSection from '@/components/ServicesSection';
+import ServicesSection from "@/components/ServicesSection";
 
 function ScrollHandler() {
   const searchParams = useSearchParams();
@@ -28,7 +28,7 @@ function ScrollHandler() {
       const el = document.getElementById(scrollId);
       if (el) {
         setTimeout(() => {
-          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
         }, 100);
       }
     }

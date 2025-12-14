@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { MessageCircle } from 'lucide-react'
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { MessageCircle } from "lucide-react";
 
 const WhatsappChatIcon = () => {
-  const whatsappNumber = '918010766712'
+  const whatsappNumber = "918010766712";
   const prefilledMessage = encodeURIComponent(
-    'Hi, I want a free consultation regarding my diet, health goals, and nutrition plan.'
-  )
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${prefilledMessage}`
+    "Hi, I want a free consultation regarding my diet, health goals, and nutrition plan.",
+  );
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${prefilledMessage}`;
 
   return (
     <motion.div
@@ -37,7 +37,7 @@ const WhatsappChatIcon = () => {
         </div>
       </Link>
     </motion.div>
-  )
-}
+  );
+};
 
-export default WhatsappChatIcon
+export default WhatsappChatIcon;

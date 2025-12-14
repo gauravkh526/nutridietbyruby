@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -61,7 +61,9 @@ export default function Transformations() {
           transition={{ duration: 0.6, delay: 0.02 }}
           className="text-gray-700 mb-12 text-lg"
         >
-          Real stories of people who achieved healthier, happier lives with NutriDietByRuby — practical plans, steady progress, and lasting habits.
+          Real stories of people who achieved healthier, happier lives with
+          NutriDietByRuby — practical plans, steady progress, and lasting
+          habits.
         </motion.p>
 
         {/* Cards */}
@@ -72,7 +74,9 @@ export default function Transformations() {
               className="bg-white rounded-2xl border p-6 text-left shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between"
             >
               <div>
-                <h3 className="text-xl font-semibold text-green-700 mb-1">{t.name}</h3>
+                <h3 className="text-xl font-semibold text-green-700 mb-1">
+                  {t.name}
+                </h3>
                 <p className="text-sm text-gray-500 mb-2">{t.duration}</p>
                 <p className="text-gray-700">{t.result}</p>
                 <p className="text-xs text-gray-400 mt-3">Plan: {t.plan}</p>

@@ -1,59 +1,59 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
     question: "Can I lose weight without starving myself?",
     answer:
-      "Absolutely. Starvation slows your metabolism. Our nutrition plans focus on balanced meals, portion control, and metabolic boosting foods so you lose weight naturally without feeling hungry."
+      "Absolutely. Starvation slows your metabolism. Our nutrition plans focus on balanced meals, portion control, and metabolic boosting foods so you lose weight naturally without feeling hungry.",
   },
   {
     question: "Do you support dietary restrictions and food allergies?",
     answer:
-      "Yes. Plans are fully adjusted for vegetarian, vegan, gluten-free, lactose-intolerant, nut-free, and other allergy or preference needs. Please mention any restrictions during onboarding."
+      "Yes. Plans are fully adjusted for vegetarian, vegan, gluten-free, lactose-intolerant, nut-free, and other allergy or preference needs. Please mention any restrictions during onboarding.",
   },
   {
     question: "How is progress tracked and measured?",
     answer:
-      "Progress is tracked using measurable markers like weight, body measurements, energy levels, sleep quality, and food logs. We review these regularly and adjust the plan as needed."
+      "Progress is tracked using measurable markers like weight, body measurements, energy levels, sleep quality, and food logs. We review these regularly and adjust the plan as needed.",
   },
   {
     question: "Can I follow the diet if I’m working or studying?",
     answer:
-      "Definitely. Plans are created around your daily routine—meals and timings are adapted for office hours, college schedules, or shift work."
+      "Definitely. Plans are created around your daily routine—meals and timings are adapted for office hours, college schedules, or shift work.",
   },
   {
     question: "Will the plan help with PCOS, thyroid, or diabetes?",
     answer:
-      "Yes. Our meal strategies support conditions like PCOS, thyroid imbalance, insulin resistance, and diabetes. We tailor the plan and can coordinate with your doctor if needed."
+      "Yes. Our meal strategies support conditions like PCOS, thyroid imbalance, insulin resistance, and diabetes. We tailor the plan and can coordinate with your doctor if needed.",
   },
   {
     question: "Are there options for families or group packages?",
     answer:
-      "Yes. We offer family-friendly plans and group packages for small teams. Contact support to discuss custom pricing and meal templates."
+      "Yes. We offer family-friendly plans and group packages for small teams. Contact support to discuss custom pricing and meal templates.",
   },
   {
     question: "Do you provide recipes and grocery lists?",
     answer:
-      "Yes. Every plan includes practical recipes, portion guides, and a simple grocery list to make adherence easy and affordable."
+      "Yes. Every plan includes practical recipes, portion guides, and a simple grocery list to make adherence easy and affordable.",
   },
   {
     question: "How quickly can I see results?",
     answer:
-      "Most people notice initial changes within 2–3 weeks with consistent adherence. Sustainable results typically become clear in 8–12 weeks."
+      "Most people notice initial changes within 2–3 weeks with consistent adherence. Sustainable results typically become clear in 8–12 weeks.",
   },
   {
     question: "Can I get help with eating out and travel?",
     answer:
-      "Yes. We provide flexible meal strategies, smart swaps, and portion rules that work while eating out or travelling so you can stay on track without missing social or work events."
+      "Yes. We provide flexible meal strategies, smart swaps, and portion rules that work while eating out or travelling so you can stay on track without missing social or work events.",
   },
   {
     question: "Do you offer follow-up or maintenance plans?",
     answer:
-      "Yes. After the main program, we provide optional maintenance packages focused on habit reinforcement, periodic check-ins, and adjusting the plan as your lifestyle changes."
-  }
+      "Yes. After the main program, we provide optional maintenance packages focused on habit reinforcement, periodic check-ins, and adjusting the plan as your lifestyle changes.",
+  },
 ];
 
 export default function FAQSection() {
@@ -81,7 +81,8 @@ export default function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-            Practical answers to common questions about our nutrition services and plans.
+            Practical answers to common questions about our nutrition services
+            and plans.
           </p>
         </motion.div>
 
@@ -94,7 +95,7 @@ export default function FAQSection() {
               >
                 <span>{faq.question}</span>
                 <span className="text-2xl font-bold text-green-600">
-                  {activeIndex === index ? '−' : '+'}
+                  {activeIndex === index ? "−" : "+"}
                 </span>
               </button>
 
@@ -103,9 +104,9 @@ export default function FAQSection() {
                   <motion.div
                     key="content"
                     initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
+                    animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.3, ease: 'easeInOut' }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
                     <div className="text-gray-700 mt-3 pr-4 leading-relaxed">
                       {faq.answer}

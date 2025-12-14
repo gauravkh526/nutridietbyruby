@@ -8,7 +8,8 @@ export type NutritionNewsItem = {
 
 export const nutritionNews: NutritionNewsItem[] = [
   {
-    title: "Intermittent fasting shown to improve metabolic health in new study",
+    title:
+      "Intermittent fasting shown to improve metabolic health in new study",
     link: "https://www.healthline.com/nutrition/intermittent-fasting-guide",
     category: "Weight Loss",
   },
@@ -18,7 +19,8 @@ export const nutritionNews: NutritionNewsItem[] = [
     category: "Diet Tips",
   },
   {
-    title: "Experts warn: Ultra-processed foods linked to obesity and mood swings",
+    title:
+      "Experts warn: Ultra-processed foods linked to obesity and mood swings",
     link: "https://www.bbc.com/news/health",
     category: "Health Warning",
   },
@@ -38,7 +40,8 @@ export const nutritionNews: NutritionNewsItem[] = [
     category: "Women’s Health",
   },
   {
-    title: "Morning sunlight exposure boosts metabolism and stabilizes hormones",
+    title:
+      "Morning sunlight exposure boosts metabolism and stabilizes hormones",
     link: "https://www.health.com/morning-sunlight-benefits",
     category: "Lifestyle",
   },

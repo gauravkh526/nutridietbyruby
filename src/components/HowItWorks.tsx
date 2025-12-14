@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { ArrowRight } from 'lucide-react';
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Utensils, Zap, Home, Dumbbell } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Utensils, Zap, Home, Dumbbell } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 interface Step {
   icon: LucideIcon;
@@ -36,7 +36,11 @@ export default function HowItWorks() {
     },
   ];
 
-  const renderQuadrant = (index: number, delay: number, borderClass: string) => {
+  const renderQuadrant = (
+    index: number,
+    delay: number,
+    borderClass: string,
+  ) => {
     const step = steps[index];
     const IconComponent = step.icon;
 
@@ -50,11 +54,12 @@ export default function HowItWorks() {
         className={`p-10 md:p-12 text-center text-white ${borderClass}`}
       >
         <div className="flex justify-center mb-4">
-          <IconComponent className="w-12 h-12 md:w-16 md:h-16" strokeWidth={1.5} />
+          <IconComponent
+            className="w-12 h-12 md:w-16 md:h-16"
+            strokeWidth={1.5}
+          />
         </div>
-        <h3 className="text-2xl md:text-3xl font-bold mb-3">
-          {step.title}
-        </h3>
+        <h3 className="text-2xl md:text-3xl font-bold mb-3">{step.title}</h3>
         <p className="text-teal-100 text-base md:text-lg leading-relaxed">
           {step.desc}
         </p>
@@ -77,7 +82,8 @@ export default function HowItWorks() {
             How NutriDiet By Ruby Works
           </h2>
           <p className="text-teal-100 text-lg md:text-xl max-w-3xl mx-auto">
-            Simple, human-first process designed to help you achieve your health and nutrition goals effortlessly.
+            Simple, human-first process designed to help you achieve your health
+            and nutrition goals effortlessly.
           </p>
         </motion.div>
 
@@ -97,7 +103,11 @@ export default function HowItWorks() {
             {renderQuadrant(0, 0, "")}
             {renderQuadrant(1, 0.1, "border-l border-white border-opacity-30")}
             {renderQuadrant(2, 0.2, "border-t border-white border-opacity-30")}
-            {renderQuadrant(3, 0.3, "border-t border-l border-white border-opacity-30")}
+            {renderQuadrant(
+              3,
+              0.3,
+              "border-t border-l border-white border-opacity-30",
+            )}
           </div>
         </div>
 

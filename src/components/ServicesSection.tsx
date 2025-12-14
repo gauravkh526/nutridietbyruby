@@ -1,15 +1,24 @@
 // components/ServicesSection.tsx
-'use client';
+"use client";
 
 import { motion } from "framer-motion";
-import { Leaf, Heart, Zap, Sprout, Baby, Users, ArrowRight } from "lucide-react";
+import {
+  Leaf,
+  Heart,
+  Zap,
+  Sprout,
+  Baby,
+  Users,
+  ArrowRight,
+} from "lucide-react";
 import type { Variants } from "framer-motion";
 
 const ServicesSection = () => {
   const services = [
     {
       title: "PCOD / PCOS Plans",
-      description: "Science-backed nutrition to balance hormones & manage symptoms effectively",
+      description:
+        "Science-backed nutrition to balance hormones & manage symptoms effectively",
       icon: Leaf,
       gradient: "from-emerald-400 via-teal-400 to-cyan-400",
       lightGradient: "from-emerald-50 via-teal-50 to-cyan-50",
@@ -17,7 +26,8 @@ const ServicesSection = () => {
     },
     {
       title: "Therapeutic Diets",
-      description: "Personalized healing plans for skin clarity, gut health & hormonal balance",
+      description:
+        "Personalized healing plans for skin clarity, gut health & hormonal balance",
       icon: Heart,
       gradient: "from-teal-400 via-emerald-400 to-lime-400",
       lightGradient: "from-teal-50 via-emerald-50 to-lime-50",
@@ -25,7 +35,8 @@ const ServicesSection = () => {
     },
     {
       title: "Weight & Metabolic Health",
-      description: "Sustainable transformation for weight management & lifestyle disorders",
+      description:
+        "Sustainable transformation for weight management & lifestyle disorders",
       icon: Zap,
       gradient: "from-cyan-400 via-emerald-400 to-green-400",
       lightGradient: "from-cyan-50 via-emerald-50 to-green-50",
@@ -33,7 +44,8 @@ const ServicesSection = () => {
     },
     {
       title: "Ayurvedic & Holistic Diets",
-      description: "Ancient wisdom meets modern science through Ayurveda, yoga & nutrition",
+      description:
+        "Ancient wisdom meets modern science through Ayurveda, yoga & nutrition",
       icon: Sprout,
       gradient: "from-green-400 via-emerald-400 to-teal-400",
       lightGradient: "from-green-50 via-emerald-50 to-teal-50",
@@ -41,7 +53,8 @@ const ServicesSection = () => {
     },
     {
       title: "Fertility Nutrition",
-      description: "Specialized nutrition support for couples planning parenthood",
+      description:
+        "Specialized nutrition support for couples planning parenthood",
       icon: Baby,
       gradient: "from-emerald-400 via-lime-400 to-green-400",
       lightGradient: "from-emerald-50 via-lime-50 to-green-50",
@@ -49,7 +62,8 @@ const ServicesSection = () => {
     },
     {
       title: "Health Coaching",
-      description: "Holistic lifestyle guidance for sustainable wellness & transformation",
+      description:
+        "Holistic lifestyle guidance for sustainable wellness & transformation",
       icon: Users,
       gradient: "from-lime-400 via-emerald-400 to-cyan-400",
       lightGradient: "from-lime-50 via-emerald-50 to-cyan-50",
@@ -59,7 +73,8 @@ const ServicesSection = () => {
 
   const handleWhatsAppClick = () => {
     const phoneNumber = "918010766712";
-    const message = "Hi! I'm interested in learning more about your nutrition services.";
+    const message =
+      "Hi! I'm interested in learning more about your nutrition services.";
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
@@ -90,11 +105,12 @@ const ServicesSection = () => {
   };
 
   return (
-    <section 
+    <section
       id="services"
       className="relative w-full py-24 md:py-32 px-6 md:px-10 lg:px-24 overflow-hidden scroll-mt-40"
       style={{
-        background: "linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 25%, #f0fdfa 50%, #ecf9f8 75%, #f0fdf4 100%)",
+        background:
+          "linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 25%, #f0fdfa 50%, #ecf9f8 75%, #f0fdf4 100%)",
       }}
     >
       {/* Premium Animated Background Elements */}
@@ -174,7 +190,9 @@ const ServicesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
           >
-            Discover our exclusive range of science-backed, personalized nutrition services designed to heal your body, balance your mind, and elevate your wellness journey to extraordinary levels.
+            Discover our exclusive range of science-backed, personalized
+            nutrition services designed to heal your body, balance your mind,
+            and elevate your wellness journey to extraordinary levels.
           </motion.p>
         </motion.div>
 
@@ -199,18 +217,25 @@ const ServicesSection = () => {
                 className="group relative h-full rounded-3xl overflow-hidden cursor-pointer"
               >
                 {/* Card Background with gradient */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${service.lightGradient} transition-all duration-500 group-hover:opacity-90`} />
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${service.lightGradient} transition-all duration-500 group-hover:opacity-90`}
+                />
 
                 {/* Gradient Border Effect */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
+                />
 
                 {/* Shine Effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 opacity-0 group-hover:opacity-100 transition-all duration-700 transform -skew-x-12 group-hover:translate-x-full" />
 
                 {/* Border Glow */}
-                <div className={`absolute inset-0 rounded-3xl border-2 border-transparent bg-gradient-to-br ${service.gradient} bg-clip-padding opacity-0 group-hover:opacity-20 transition-all duration-500`} style={{
-                  borderImage: `linear-gradient(135deg, rgb(16, 185, 129), rgb(20, 184, 166), rgb(6, 182, 212)) 1`,
-                }} />
+                <div
+                  className={`absolute inset-0 rounded-3xl border-2 border-transparent bg-gradient-to-br ${service.gradient} bg-clip-padding opacity-0 group-hover:opacity-20 transition-all duration-500`}
+                  style={{
+                    borderImage: `linear-gradient(135deg, rgb(16, 185, 129), rgb(20, 184, 166), rgb(6, 182, 212)) 1`,
+                  }}
+                />
 
                 {/* Content */}
                 <div className="relative z-10 p-8 md:p-10 h-full flex flex-col justify-between">
@@ -220,11 +245,16 @@ const ServicesSection = () => {
                       whileHover={{ scale: 1.15, rotate: 10 }}
                       className={`inline-block p-5 rounded-2xl bg-gradient-to-br ${service.gradient} shadow-lg mb-6`}
                     >
-                      <IconComponent className="w-8 h-8 text-white" strokeWidth={2.5} />
+                      <IconComponent
+                        className="w-8 h-8 text-white"
+                        strokeWidth={2.5}
+                      />
                     </motion.div>
 
                     {/* Title */}
-                    <h3 className={`text-2xl md:text-3xl font-bold ${service.accentColor} mb-4 leading-tight`}>
+                    <h3
+                      className={`text-2xl md:text-3xl font-bold ${service.accentColor} mb-4 leading-tight`}
+                    >
                       {service.title}
                     </h3>
 
@@ -272,11 +302,15 @@ const ServicesSection = () => {
               Ready to Transform Your Health?
             </h3>
             <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-              Join thousands of healthy individuals who've transformed their lives with our personalized nutrition plans.
+              Join thousands of healthy individuals who've transformed their
+              lives with our personalized nutrition plans.
             </p>
             <motion.button
               onClick={handleWhatsAppClick}
-              whileHover={{ scale: 1.08, boxShadow: "0 25px 50px rgba(0,0,0,0.3)" }}
+              whileHover={{
+                scale: 1.08,
+                boxShadow: "0 25px 50px rgba(0,0,0,0.3)",
+              }}
               whileTap={{ scale: 0.95 }}
               className="px-10 py-4 bg-white text-emerald-600 font-bold rounded-xl text-lg shadow-2xl hover:bg-emerald-50 transition-all duration-300"
             >
