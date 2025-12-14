@@ -58,7 +58,7 @@ const ServicesSection = () => {
   ];
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "8010766712";
+    const phoneNumber = "918010766712";
     const message = "Hi! I'm interested in learning more about your nutrition services.";
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
