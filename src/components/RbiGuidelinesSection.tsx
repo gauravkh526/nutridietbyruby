@@ -80,15 +80,19 @@ export default function NutritionGuidelinesSection() {
         </div>
 
         <div className="mt-16">
-          <Button asChild size="lg" className="text-base group bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 shadow-xl h-12 px-8">
-            <a
-              href="/nutrition-guide"
-              className="flex items-center"
-            >
-              Get Your Free Nutrition Starter Guide
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </a>
-          </Button>
+          <Button 
+  asChild 
+  size="lg" 
+  className="text-base group bg-gradient-to-r from-emerald-600 to-green-600 hover:from-emerald-700 hover:to-green-700 shadow-lg md:shadow-xl h-12 px-6 md:px-8 mx-1 md:mx-0 w-fit"
+>
+  <a
+    href="https://forms.gle/RxX91vQedEikqXNy7"
+    className="flex items-center justify-center"
+  >
+    Get Your Free Nutrition Starter Guide
+    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+  </a>
+</Button>
         </div>
       </div>
     </section>

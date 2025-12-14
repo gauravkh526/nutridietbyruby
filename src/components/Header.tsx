@@ -44,7 +44,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
   <Image 
-  src="/logo/nutridietbyruby_logo.jpg"
+  src="/logo/nutridietbyruby_logo.png"
   alt="Nutridietbyruby" 
   width={100} 
   height={100}
