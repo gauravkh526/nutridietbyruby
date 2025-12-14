@@ -17,6 +17,7 @@ import MediaCoverage from '@/components/MediaCoverage';
 import CTAModal from '@/components/CTAModal'
 //import WhatsappChatIcon from '@/components/WhatsappChatIcon'
 import StickyFooterCTA from "@/components/StickyFooterCTA";
+import ServicesSection from '@/components/ServicesSection';
 
 function ScrollHandler() {
   const searchParams = useSearchParams();
@@ -49,6 +50,7 @@ export default function HomePage() {
         <HeroSection />
         <FeaturesSection />
         <HowItWorks />
+        <ServicesSection />
         <Testimonials />
         <LegalWins />
         <CTASection />
