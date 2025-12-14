@@ -3,6 +3,7 @@
 
 import { motion } from "framer-motion";
 import { Leaf, Heart, Zap, Sprout, Baby, Users, ArrowRight } from "lucide-react";
+import type { Variants } from "framer-motion";
 
 const ServicesSection = () => {
   const services = [
@@ -64,7 +65,7 @@ const ServicesSection = () => {
     window.open(whatsappUrl, "_blank");
   };
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -75,7 +76,7 @@ const ServicesSection = () => {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 40, scale: 0.95 },
     visible: {
       opacity: 1,
@@ -83,7 +84,7 @@ const ServicesSection = () => {
       scale: 1,
       transition: {
         duration: 0.7,
-        ease: [0.34, 1.56, 0.64, 1],
+        ease: "easeOut",
       },
     },
   };
