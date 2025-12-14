@@ -15,7 +15,7 @@ import Footer from '@/components/Footer';
 import LegalWins from "@/components/LegalWins";
 import MediaCoverage from '@/components/MediaCoverage';
 import CTAModal from '@/components/CTAModal'
-import WhatsappChatIcon from '@/components/WhatsappChatIcon'
+//import WhatsappChatIcon from '@/components/WhatsappChatIcon'
 import StickyFooterCTA from "@/components/StickyFooterCTA";
 
 function ScrollHandler() {
@@ -42,7 +42,7 @@ export default function HomePage() {
       <Suspense fallback={null}>
         <ScrollHandler />
       </Suspense>
-      <WhatsappChatIcon />
+      {/* <WhatsappChatIcon /> */}
       <CTAModal />
       <main className="bg-white text-gray-900 pb-24 pb-[70px]">
         <Header />

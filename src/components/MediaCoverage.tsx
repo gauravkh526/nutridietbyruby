@@ -8,19 +8,19 @@ const newsItems = [
     title: 'Top 5 Diet Trends for 2025',
     summary: 'Leading health platforms highlight sustainable and science-backed diet trends for better health and energy.',
     link: 'https://www.healthline.com/nutrition/healthy-eating-tips',
-    img: '/nutrition1.png',
+    img: '/nutrition1.jpg',
   },
   {
     title: 'How Personalized Meal Plans Improve Wellness',
     summary: 'Nutrition experts explain why customized diets work better than generic meal plans for weight and health goals.',
     link: 'https://www.medicalnewstoday.com/articles/personalized-nutrition',
-    img: '/nutrition2.png',
+    img: '/nutrition2.jpg',
   },
   {
     title: 'Nutrition Hacks That Actually Work',
     summary: 'Wellness blogs share real strategies to improve metabolism, digestion, and maintain a balanced diet.',
     link: 'https://www.eatthis.com/nutrition-tips/',
-    img: '/nutrition3.png',
+    img: '/nutrition3.jpg',
   },
 ]
 

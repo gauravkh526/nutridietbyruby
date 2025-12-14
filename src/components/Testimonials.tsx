@@ -9,13 +9,12 @@ import { ArrowRight } from 'lucide-react';
 function calcSavePercent(monthlyBase: number, planTotal: number, months: number) {
   const planMonthly = planTotal / months;
   const save = ((monthlyBase - planMonthly) / monthlyBase) * 100;
-  return Math.round(save); // round to whole percent
+  return Math.round(save);
 }
 
 export default function PersonalizedPlans() {
   const monthlyBase = 2999;
   const waNumber = '918010766712';
-  const waMessage = encodeURIComponent("Hello - I'm interested in this plan. Please help me get started.");
 
   const plans = [
     {
@@ -29,7 +28,7 @@ export default function PersonalizedPlans() {
         'Phone + Email support',
       ],
       highlight: '',
-      link: `https://wa.me/${waNumber}?text=${waMessage}`,
+      whatsappLink: '',
     },
     {
       key: 'quarterly',
@@ -44,8 +43,8 @@ export default function PersonalizedPlans() {
         'Monthly progress check & minor adjustments',
         'Phone + Email support',
       ],
-      highlight: '', // set below
-      link: `https://wa.me/${waNumber}?text=${waMessage}`,
+      highlight: '',
+      whatsappLink: '',
     },
     {
       key: 'halfyearly',
@@ -60,8 +59,8 @@ export default function PersonalizedPlans() {
         'Bi-monthly progress reports & adjustments',
         'Phone + Email support',
       ],
-      highlight: '', // set below
-      link: `https://wa.me/${waNumber}?text=${waMessage}`,
+      highlight: '',
+      whatsappLink: '',
       popular: true,
     },
     {
@@ -77,12 +76,12 @@ export default function PersonalizedPlans() {
         'Monthly progress reports, priority scheduling',
         'Phone + Email support',
       ],
-      highlight: '', // set below
-      link: `https://wa.me/${waNumber}?text=${waMessage}`,
+      highlight: '',
+      whatsappLink: '',
     },
   ];
 
-  // calculate highlights based on monthlyBase
+  // Calculate highlights and generate WhatsApp links
   plans.forEach((p) => {
     if ((p as any).totalPrice && (p as any).months) {
       const total = (p as any).totalPrice;
@@ -90,6 +89,11 @@ export default function PersonalizedPlans() {
       const save = calcSavePercent(monthlyBase, total, months);
       (p as any).highlight = save > 0 ? `Save ~${save}% vs monthly` : '';
     }
+
+    // Generate plan-specific WhatsApp message
+    const message = `Hello! I'm interested in your ${p.title} (${p.priceLabel}). Please help me get started.`;
+    const encodedMessage = encodeURIComponent(message);
+    (p as any).whatsappLink = `https://wa.me/${waNumber}?text=${encodedMessage}`;
   });
 
   return (
@@ -151,7 +155,7 @@ export default function PersonalizedPlans() {
                 <div className="mt-2">
                   <Button asChild size="sm" className="w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700">
                     <a
-                      href={p.link}
+                      href={(p as any).whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center"
