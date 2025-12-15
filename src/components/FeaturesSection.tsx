@@ -71,8 +71,7 @@ export default function FeaturesSection() {
           className="mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-green-800 dark:text-white mb-4">
-            Why Choose <span className="text-green-600">NutriDiet by ruby</span>
-            ?
+            Why Choose <span className="text-green-600">Nutridietbyruby</span>?
           </h2>
           <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg">
             We help you achieve long-term health, fitness, and confidence

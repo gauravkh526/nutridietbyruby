@@ -79,7 +79,7 @@ export default function HowItWorks() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
-            How NutriDiet By Ruby Works
+            How Nutridietbyruby Works
           </h2>
           <p className="text-teal-100 text-lg md:text-xl max-w-3xl mx-auto">
             Simple, human-first process designed to help you achieve your health
