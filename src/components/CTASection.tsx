@@ -45,7 +45,7 @@ export default function CTASection() {
   return (
     <section
       ref={ref}
-      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
+      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-12"
     >
       {/* Premium animated background */}
       <div className="absolute inset-0">
@@ -110,7 +110,7 @@ export default function CTASection() {
         {/* Trust badge */}
         <motion.div
           variants={itemVariants}
-          className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-400/10 to-emerald-400/10 border border-teal-400/20 rounded-full px-6 py-3 mb-8 backdrop-blur-sm"
+          className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-400/10 to-emerald-400/10 border border-teal-400/20 rounded-full px-6 py-3 mb-8 backdrop-blur-sm mx-4"
         >
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
           <span className="text-teal-300 font-semibold text-sm tracking-wide">
@@ -259,7 +259,7 @@ export default function CTASection() {
         {/* Bottom testimonial */}
         <motion.div
           variants={itemVariants}
-          className="mt-16 p-8 rounded-3xl bg-gradient-to-r from-slate-800/30 to-slate-700/30 border border-slate-600/30 backdrop-blur-sm max-w-3xl mx-auto"
+          className="mt-16 p-8 rounded-3xl bg-gradient-to-r from-slate-800/30 to-slate-700/30 border border-slate-600/30 backdrop-blur-sm max-w-3xl md:mx-auto md:p-8 mx-4 p-6"
         >
           <div className="flex items-center gap-4 mb-4">
             <div className="w-12 h-12 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full flex items-center justify-center text-white font-bold text-lg">
