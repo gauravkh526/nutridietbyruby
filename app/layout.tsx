@@ -1,12 +1,21 @@
-import './globals.css';
-import { ReactNode } from 'react';
+import "./globals.css";
+import { ReactNode } from "react";
 import TopNewsWrapper from "@/components/TopNewsWrapper";
 export const dynamic = "force-dynamic";
+
+export const metadata = {
+  icons: {
+    icon: "/favicon.png",
+  },
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="font-sans bg-gray-100 text-gray-900" suppressHydrationWarning>
+      <body
+        className="font-sans bg-gray-100 text-gray-900"
+        suppressHydrationWarning
+      >
         <TopNewsWrapper />
         {children}
       </body>
